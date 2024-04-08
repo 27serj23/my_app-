@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ artwork.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <h1>{{ artwork.title }}</h1>
+    <h2><a href=''>Главная</a> <a href='picture.png'>Картины</a>
+    <p>Artist: {{ artwork.artist }}</p>
+    <p>Price: {{ artwork.price }}</p>
+    <p>Description: {{ artwork.description }}</p>
+</body>
+</html>
